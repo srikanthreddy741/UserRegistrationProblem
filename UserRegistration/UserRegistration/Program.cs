@@ -1,4 +1,7 @@
-﻿namespace UserRegistration
+﻿using System;
+
+
+namespace UserRegistration
 {
     class Program
     {
@@ -8,10 +11,10 @@
             Console.WriteLine("Welcome to the User Registration Program");
 
             UserRegister userRegister = new UserRegister();
-            Console.WriteLine("Enter the First Name: ");
-            string firstname = Console.ReadLine();
+            Console.WriteLine("Enter the Last Name: ");
+            string Lastname = Console.ReadLine();
 
-            if (userRegister.validateFirstName(firstname))
+            if (userRegister.validateLastName(Lastname))
             {
                 Console.WriteLine("Pattern Match");
             }
