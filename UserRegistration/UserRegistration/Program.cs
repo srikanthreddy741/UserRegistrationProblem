@@ -11,10 +11,10 @@ namespace UserRegistration
             Console.WriteLine("Welcome to the User Registration Program");
 
             UserRegister userRegister = new UserRegister();
-            Console.WriteLine("Enter the Last Name: ");
-            string Lastname = Console.ReadLine();
+            Console.WriteLine("Enter the EmailId: ");
+            string Email = Console.ReadLine();
 
-            if (userRegister.validateLastName(Lastname))
+            if (userRegister.validateEmailId(Email))
             {
                 Console.WriteLine("Pattern Match");
             }
