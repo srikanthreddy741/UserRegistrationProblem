@@ -3,6 +3,7 @@
 
 namespace UserRegistration
 {
+   
     class Program
     {
         public static void Main(string[] args)
@@ -11,16 +12,17 @@ namespace UserRegistration
             Console.WriteLine("Welcome to the User Registration Program");
 
             UserRegister userRegister = new UserRegister();
-            Console.WriteLine("Enter the EmailId: ");
-            string Email = Console.ReadLine();
 
-            if (userRegister.validateEmailId(Email))
+            Console.WriteLine("Enter the Mobile Number: ");
+            string MobileNum = Console.ReadLine();
+
+            if (userRegister.validateMobileNumber(MobileNum))
             {
-                Console.WriteLine("Pattern Match");
+                Console.WriteLine("Mobile Number is valid");
             }
             else
             {
-                Console.WriteLine("Pattern not Match");
+                Console.WriteLine("Mobile Number is not valid");
             }
         }
     }
